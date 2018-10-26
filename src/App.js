@@ -116,10 +116,6 @@ class App extends Component {
       'members': ['newTeamMember1', 'newTeamMember2', 'newTeamMember3']
     }
     teamsRef.push(newTeam)
-    this.setState({ 
-      teams: [...this.state.teams, newTeam],
-      textTeamName: '' 
-    })
   }
 
   render() {
@@ -129,7 +125,7 @@ class App extends Component {
         <header className="App-header">
 
           <section>
-            {teams.sort(sortBy('-score')).map((team, index) => 
+            {teams.sort(sortBy('name')).map((team, index) => 
               (<Team key={index} rank={index+1} onSubmitScore={this.onSubmitScore} data={team} /> )
             )}
           </section>
