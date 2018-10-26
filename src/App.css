@@ -43,6 +43,18 @@ html, body {
   height: 100%;
 }
 
+table {
+  width: 100%;
+}
+
+section {
+  min-width: 300px;
+}
+
+td {
+  width: 33%;
+}
+
 /* body {
   font-family: "Varela Round", sans-serif;
   font-size: 1.4rem;
