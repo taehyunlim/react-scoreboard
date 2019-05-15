@@ -37,9 +37,8 @@ const scoreTextStyle = {
 const scoreTickerStyle = {
   display: 'inline-block',
   borderRadius: '7px',
-  padding: '2px 5px',
+  padding: '2px 7px',
   backgroundColor: '#3b5998',
-  fontWeight: 'bold'
 }
 const editTeamListStyle = {
   textAlign: 'left'
@@ -171,7 +170,7 @@ const Main = (props) => {
                 <tr>
                   <td>#{index+1}</td>
                   <td><b>{team.name}</b></td>
-                  <td style={scoreTickerStyle}>{team.score}</td>
+                  <td><span style={scoreTextStyle}>{team.score}</span></td>
                 </tr>
               </tbody>
             </table>
